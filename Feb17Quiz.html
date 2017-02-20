@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+  <h3>If today is a weekday input <b>"weekday"</b> or if today is a vacation day input <b>"vacation"</b></h3>
+    
+    <input id="workToday" type="text"/>
+
+    <button onclick="sleepIn()">Push me</button>
+    <!--<p id="demo"></p>-->
+
+    <script>
+       // var workToday = prompt("Is today a weekday or is today a vacation day?");
+
+
+        var sleepIn = function (weekday, vacation) {
+
+            var workToday = document.getElementById("workToday").value;
+          //  console.log(workToday);
+           // var weekday = document.getElementById("workToday").value;
+           // var vacation = document.getElementById("workToday").value;
+
+            if (workToday === 'weekday') {
+                document.write("WE WORK HARD!");
+            }
+            else if (workToday === 'vacation') {
+                document.write("WE SLEEP IN!");
+            }
+            else {
+                document.write("Invalid Entry. Please try again");
+            }
+           
+        }
+    </script>
+</body>
+</html>

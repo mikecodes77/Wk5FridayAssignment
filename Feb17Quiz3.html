@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function getTextInfo() {
+            var x = XMLHttpRequest();
+            x.onreadystatechange = function () {
+                if (this.readystate == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = x;
+                    }
+            };
+            x.open("GET", "script/file.txt", true);
+            x.send();
+
+        }
+        
+
+    </script>
+
+</head>
+<body>
+    <p id="demo"></p>
+
+
+</body>
+</html>
